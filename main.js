@@ -3,7 +3,7 @@ import store from './store'
 import App from './App'
 import global from './utils/global'
 
-import Json from './Json' //测试用数据
+import Json from './Json' //测试用数据/test data
 
 import uView from "uview-ui";
 Vue.use(uView);
@@ -17,8 +17,8 @@ Vue.use(require('vue-moment'));
  *  Because the tool functions belong to EdgeSmartChain's company assets, several commonly used functions are directly mounted on the Vue instance.
   * All test data are stored in the root directory json.js
  *  
- *  css部分使用了App.vue下的全局样式和iconfont图标，有需要图标库的可以留言。
- *  示例使用了uni.scss下的变量, 除变量外已尽量移除特有语法,可直接替换为其他预处理器使用
+ *  The css part uses the global style and iconfont icon under App.vue. If you need an icon library, you can leave a message.
+  * The example uses variables under uni.scss. Except for variables, unique syntax has been removed as much as possible and can be directly replaced by other preprocessors.
  */
 const navTo = (url)=>{
 	uni.navigateTo({
@@ -39,7 +39,7 @@ const msg = (title, duration=1500, mask=false, icon='none', success)=>{
 	});
 }
 const json = type=>{
-	//模拟异步请求数据
+	//Simulate asynchronous request data
 	return new Promise(resolve=>{
 		setTimeout(()=>{
 			resolve(Json[type]);
@@ -61,11 +61,11 @@ const upload = (successCallback, progressCallback)=>{
 		success: function (chooseImageRes) {
 			const tempFilePaths = chooseImageRes.tempFilePaths;
 			uni.showLoading({
-			    title: '正在上传中...'
+			    title: '正在上传中.../Uploading...'
 			});
 			let token = uni.getStorageSync('token')
 			const uploadTask = uni.uploadFile({
-				url: global.REQUEST_URL + '/v1/common/upload', //仅为示例，非真实的接口地址
+				url: global.REQUEST_URL + '/v1/common/upload', //
 				filePath: tempFilePaths[0],
 				name: 'file',
 				header: {'Authorization': token},
@@ -73,7 +73,7 @@ const upload = (successCallback, progressCallback)=>{
 					uni.hideLoading()
 					let res = JSON.parse(response.data)
 					if(res.code === 200){
-						uni.showToast({title: '上传成功', duration: 2000, icon: 'none'});
+						uni.showToast({title: '上传成功/Upload successful', duration: 2000, icon: 'none'});
 					} else {
 						uni.showToast({title: res.msg, duration: 2000, icon: 'none'});
 					}
@@ -91,9 +91,9 @@ const upload = (successCallback, progressCallback)=>{
 				if(progressCallback){
 					progressCallback(res)
 				}
-				//console.log('上传进度' + res.progress);
-				//console.log('已经上传的数据长度' + res.totalBytesSent);
-				//console.log('预期需要上传的数据总长度' + res.totalBytesExpectedToSend);
+				//console.log('-1' + res.progress);
+				//console.log('+1' + res.totalBytesSent);
+				//console.log('16' + res.totalBytesExpectedToSend);
 			});
 		}
 	})
