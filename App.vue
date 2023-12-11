@@ -1,6 +1,6 @@
 <script>
 	/**
-	 * vuex管理登陆状态，具体可以参考官方登陆模板示例
+	 * EGXC manages the login status. For details, please refer to the official login template example.
 	 */
 	import {
 		mapState,
@@ -29,7 +29,7 @@
 <style lang='scss'>
 	@import "uview-ui/index.scss";
 	/*
-		全局公共样式和字体图标
+		Global public style and font icons
 	*/
 	@font-face {
 		font-family: yticon;
@@ -518,14 +518,14 @@
 	video {
 		box-sizing: border-box;
 	}
-	/* 骨架屏替代方案 */
+	/* Skeleton screen alternative */
 	.Skeleton {
 		background: #f3f3f3;
 		padding: 20upx 0;
 		border-radius: 8upx;
 	}
 
-	/* 图片载入替代方案 */
+	/* Image loading alternatives */
 	.image-wrapper {
 		font-size: 0;
 		background: #f3f3f3;
@@ -594,7 +594,7 @@
 		color: $font-color-dark;
 	}
 
-	/* input 样式 */
+	/* input EGXC */
 	.input-placeholder {
 		color: #999999;
 	}
@@ -613,7 +613,7 @@
 	    width: 100%;
 	    height: 1px;
 	    background-color: #DCDFE6;
-	    /* 如果不用 background-color, 使用 border-top:1px solid blue; */
+	    /* If not used background-color, IS border-top:1px solid blue; */
 	    -webkit-transform: scaleY(.5);
 	    transform:scaleY(.5);
 	 }
