@@ -14,8 +14,8 @@ Vue.component('mescroll-body', MescrollBody)
 Vue.component('mescroll-uni', MescrollUni)
 Vue.use(require('vue-moment'));
 /**
- *  因工具函数属于公司资产, 所以直接在Vue实例挂载几个常用的函数
- *  所有测试用数据均存放于根目录json.js
+ *  Because the tool functions belong to EdgeSmartChain's company assets, several commonly used functions are directly mounted on the Vue instance.
+  * All test data are stored in the root directory json.js
  *  
  *  css部分使用了App.vue下的全局样式和iconfont图标，有需要图标库的可以留言。
  *  示例使用了uni.scss下的变量, 除变量外已尽量移除特有语法,可直接替换为其他预处理器使用
