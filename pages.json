@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/guide",
 			"style": {
-				"navigationBarTitleText": "启动页",
+				"navigationBarTitleText": "page",
 				"app-plus": {
 					"titleNView": false
 				}
@@ -26,7 +26,7 @@
 		{
 			"path": "pages/finance/deposit",
 			"style": {
-				"navigationBarTitleText": "存币理财",
+				"navigationBarTitleText": "Deposit money for financial management",
 				"navigationBarBackgroundColor": "#5E7EEE",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": true
@@ -35,28 +35,28 @@
 		{
 			"path": "pages/finance/depositDetail",
 			"style": {
-				"navigationBarTitleText": "活动详情",
+				"navigationBarTitleText": "Event Details",
 				"enablePullDownRefresh": true
 			}
 		},
 		{
 			"path": "pages/finance/myOrder",
 			"style": {
-				"navigationBarTitleText": "我的理财",
+				"navigationBarTitleText": "My financial management",
 				"enablePullDownRefresh": true
 			}
 		},
 		{
 			"path": "pages/finance/historyOrder",
 			"style": {
-				"navigationBarTitleText": "理财记录",
+				"navigationBarTitleText": "financial records",
 				"enablePullDownRefresh": true
 			}
 		},
 		{
 			"path": "pages/exchange/index",
 			"style": {
-				"navigationBarTitleText": "闪兑",
+				"navigationBarTitleText": "Flash exchange",
 				"app-plus" : {
 					"softinputMode": "adjustResize"
 				}
@@ -65,12 +65,12 @@
 		{
 			"path": "pages/otc/otc",
 			"style": {
-				"navigationBarTitleText": "法币交易",
-				//"disableScroll": false, // 禁止滚动, 解决scroll-view在Android小程序卡顿的问题
-				//"enablePullDownRefresh" : false, // 不开启下拉刷新, 默认就是false
-				"app-plus" : {
-					//"bounce" : "none", // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
-					"subNVues": [{
+				"navigationBarTitleText": "fiat currency transaction",
+//"disableScroll": false, // Disable scrolling to solve the problem of scroll-view stuck in Android applet
+//"enablePullDownRefresh" : false, //Do not enable pull-down refresh, the default is false
+"app-plus" : {
+//"bounce" : "none", // Cancel iOS bounce to avoid conflict with pull-down refresh (mini program cannot be canceled)
+"subNVues": [{
 						"id": "otcFilterDrawer",
 						"path": "pages/otc/subnvue/drawer",
 						"type": "popup",
@@ -87,7 +87,7 @@
 		{
 			"path": "pages/otc/order/list",
 			"style": {
-				"navigationBarTitleText": "订单记录",
+				"navigationBarTitleText": "Order record",
 				"enablePullDownRefresh": true,
 				"app-plus": {
 					"bounce": "none",
@@ -134,45 +134,45 @@
 		},
 		{
 			"path": "pages/otc/merchant/merchant",
-			"style": {
-				"navigationBarTitleText": "承兑商管理"
-			}
-		},
-		{
-			"path": "pages/otc/merchant/apply",
-			"style": {
-				"navigationBarTitleText": "承兑商申请"
-			}
-		},
-		{
-			"path": "pages/otc/merchant/orderList",
-			"style": {
-				"navigationBarTitleText": "订单列表"
-			}
-		},
-		{
-			"path": "pages/otc/merchant/advertList",
-			"style": {
-				"navigationBarTitleText": "广告列表"
-			}
-		},
-		{
-			"path": "pages/otc/merchant/addAdvert",
-			"style": {
-				"navigationBarTitleText": "添加广告"
-			}
-		},
-		{
-			"path": "pages/news/news",
-			"style": {
-				"navigationBarTitleText": "快讯",
-				"enablePullDownRefresh": true
-			}
-		},
-		{
-			"path": "pages/wallet/wallet",
-			"style": {
-				"navigationBarTitleText": "我的资产",
+"style": {
+"navigationBarTitleText": "Acceptor Management"
+}
+},
+{
+"path": "pages/otc/merchant/apply",
+"style": {
+"navigationBarTitleText": "Acceptor Application"
+}
+},
+{
+"path": "pages/otc/merchant/orderList",
+"style": {
+"navigationBarTitleText": "Order List"
+}
+},
+{
+"path": "pages/otc/merchant/advertList",
+"style": {
+"navigationBarTitleText": "Advertising List"
+}
+},
+{
+"path": "pages/otc/merchant/addAdvert",
+"style": {
+"navigationBarTitleText": "Add Advertisement"
+}
+},
+{
+"path": "pages/news/news",
+"style": {
+"navigationBarTitleText": "News",
+"enablePullDownRefresh": true
+}
+},
+{
+"path": "pages/wallet/wallet",
+"style": {
+"navigationBarTitleText": "My Assets",
 				"navigationBarBackgroundColor": "#0952C3",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": true,
@@ -186,7 +186,7 @@
 		},{
 			"path": "pages/wallet/detail",
 			"style": {
-				"navigationBarTitleText": "币种明细",
+				"navigationBarTitleText": "Currency details",
 				"app-plus": {
 					"bounce": "none",
 					"titleNView": {
@@ -213,7 +213,7 @@
 		},{
 			"path": "pages/wallet/deposit",
 			"style": {
-				"navigationBarTitleText": "充币",
+				"navigationBarTitleText": "充币/Deposit coins",
 				"app-plus": {
 					"bounce": "none"
 				}
@@ -221,22 +221,22 @@
 		},{
 			"path": "pages/wallet/withdraw",
 			"style": {
-				"navigationBarTitleText": "提币",
+				"navigationBarTitleText": "提币/Withdraw coins",
 				"app-plus": {
 					"bounce": "none"
 				}
 			}
 		}, {
-            "path": "pages/wallet/search", //搜索页面
+            "path": "pages/wallet/search", //搜索页面 /search page
             "style": {
                 "app-plus": {
                     "titleNView": {
-                        //"type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+                        //"type": "transparent",//Transparent gradient navigation bar App-nvue 2.4.4+ supports
                         "searchInput": {
 							"align": "left",
 							"backgroundColor": "rgba(231, 231, 231,.7)",
 							"borderRadius": "16px",
-							"placeholder": "搜索币种",
+							"placeholder": "Search currency",
 							"placeholderColor": "#606266"
 						}
                     }
@@ -246,7 +246,7 @@
 		{
 			"path": "pages/product/product",
 			"style": {
-				"navigationBarTitleText": "详情展示",
+				"navigationBarTitleText": "Detailed display",
 				"app-plus": {
 					"titleNView": {
 						"type": "transparent"
@@ -256,13 +256,13 @@
 		}, {
 			"path": "pages/set/set",
 			"style": {
-				"navigationBarTitleText": "设置"
+				"navigationBarTitleText": "set up"
 			}
 		},
 		{
 			"path": "pages/set/help",
 			"style": {
-				"navigationBarTitleText": "帮助中心",
+				"navigationBarTitleText": "Help Center",
 				"navigationBarBackgroundColor": "#4574e8",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": true,
