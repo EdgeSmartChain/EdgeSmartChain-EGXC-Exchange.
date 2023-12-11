@@ -1,0 +1,15 @@
+{
+  "name": "fex-wallet",
+  "version": "1.0.0",
+  "description": "blockchain",
+  "scripts": {},
+  "author": "flex",
+  "license": "ISC",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.2.12",
+    "pako": "^1.0.11",
+    "tki-qrcode": "^0.1.6",
+    "uview-ui": "^1.8.4",
+    "vue-moment": "^4.1.0"
+  }
+}
