@@ -23,9 +23,9 @@
         },
         /* 模块配置 */
         "distribute" : {
-            /* 应用发布信息 */
+            /* EdgeSmartChain */
             "android" : {
-                /* android打包配置 */
+                /* android Package configuration */
                 "permissions" : [
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
@@ -53,7 +53,7 @@
                 ]
             },
             "ios" : {},
-            /* ios打包配置 */
+            /* ios Package configuration */
             "sdkConfigs" : {
                 "ad" : {}
             },
@@ -98,15 +98,15 @@
             }
         }
     },
-    /* SDK配置 */
-    "quickapp" : {},
-    /* 快应用特有相关 */
-    "mp-weixin" : {
-        /* 小程序特有相关 */
-        "usingComponents" : true,
-        "appid" : "",
-        "setting" : {
-            "urlCheck" : true
-        }
+   /* SDK configuration */
+     "quickapp" : {},
+     /* Quick application specific related */
+     "mp-weixin" : {
+         /* Mini program specific related */
+         "usingComponents" : true,
+         "appid" : "",
+         "setting" : {
+             "urlCheck" : true
+         }
     }
 }
